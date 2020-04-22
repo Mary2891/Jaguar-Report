@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DF9715"
+                android:layout_weight="0"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/icono_queja"
+                    android:padding="5dp"
+                    android:src="@drawable/idea_amarilla" />
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="1dp"
+                    android:text="Sugerencias"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/nombre"
+                    android:text="Maribel Mora Flores"
+                    android:paddingLeft="30dp"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/num_control"
+                    android:text="16030549"
+                    android:paddingLeft="30dp"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#D38A07"/>
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="305dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_height="55dp"
+                android:hint="Nombre de la queja"
+                android:padding="1dp"
+                android:gravity="top"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edtx6"
+                android:layout_width="305dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="15dp"
+                android:layout_height="280dp"
+                android:hint="Escriba aquí su sugerencia..."
+                android:padding="10dp"
+                android:gravity="top"
+                android:textSize="18dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/borde"/>
+            <EditText
+                android:id="@+id/date"
+                android:hint="Seleccione la fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:layout_marginHorizontal="35dp"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:maxLines="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="0.1"
+                >
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_cancelar"
+                    android:text="Cancelar"
+                    android:textColor="@drawable/text_btn_uno"
+                    android:onClick="cancelar"
+                    />
+                <Button
+                    android:id="@+id/btn_cancelar"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_uno"
+                    android:text="Enviar"
+                    android:textColor="@drawable/text_btn_uno"
+                    android:onClick="after_enviar"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alumno"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="#554b4b"/>
+
+        <TextView
+            android:id="@+id/tvnom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número de control"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="#554b4b"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tvnumcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titulo del reporte"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="#554b4b"/>
+
+        <TextView
+            android:id="@+id/nom_queja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="#554b4b"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/fechas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción del reporte"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="#554b4b"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/desc_queja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_margin="5dp"/>
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_uno"
+        android:text="Regresar"
+        android:textColor="@drawable/text_btn_uno"
+        android:onClick="principal"
+
+        />
+</LinearLayout>
